@@ -1,11 +1,11 @@
 Finder
 ======
-Sublime text 3 plugin, to make handy shortcut for "Where" field in search panel.
+Sublime text 3 plugin, that can make handy shortcuts for "Where" field in search panel.
 
 
 *Usage:*
 
-You could set this key binding:
+You can declare shortcut like:
 
 ```
 {
@@ -22,7 +22,7 @@ You could set this key binding:
 },
 ```
 
-or add this settings in project settings *Project->Edit Project*
+or add this settings to *Project->Edit Project*
 
 ```
     ...
@@ -39,7 +39,7 @@ or add this settings in project settings *Project->Edit Project*
     ...
 ```
 
-and set key bindig without *args*
+and declare shortcuts without arguments.
 
 *Example:*
 
