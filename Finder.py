@@ -6,10 +6,14 @@ class FinderCommand(sublime_plugin.WindowCommand):
     paths = []
 
     def run(self, finder_folders=None):
+        window = sublime.active_window()
+        view = window.active_view()
+        selection = view.substr(view.sel()[0])
+        sublime.set_clipboard(selection)
         self.names = []
         self.paths = []
         if not finder_folders:
-            finder_folders = sublime.active_window().project_data().get('finder_folders', [])
+            finder_folders = window.project_data().get('finder_folders', [])
 
         for path in finder_folders:
             self.names.append([path['name'], path['path']])
